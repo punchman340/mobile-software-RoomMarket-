@@ -32,7 +32,7 @@
         <activity
             android:name=".DetailActivity"
             android:exported="false"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".ListActivity" />
 
         <activity
             android:name=".ReservationListActivity"
