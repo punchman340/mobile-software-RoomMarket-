@@ -1,8 +1,50 @@
-<<<<<<< HEAD
 # RoomMarket
 
-## 앱 소개
-숙소 리스트를 조회하고 예약할 수 있는 안드로이드 앱
+> **모바일 응용 소프트웨어 기말 프로젝트 제출**
+> **학번:** 223282 | **이름:** 조민훈 | **분반:** 1분반(화,목 1시 반)
+
+## 1. 앱 기획 및 테마 설명
+* **앱 이름:** RoomMarket
+* **테마:** 한눈에 들어오는 직관적인 UI의 맞춤형 숙소 예약 플랫폼
+* **기획 의도:**
+  사용자가 복잡한 과정 없이 원하는 숙소를 쉽게 탐색하고, 즉각적으로 예약할 수 있는 실용적인 마켓 앱입니다. 기말고사 필수 요건인 뷰바인딩, 리사이클러뷰, 네비게이션 드로어 등을 적극 활용하여 완성도 높은 사용자 경험(UX)을 제공하도록 설계했습니다. 단순히 목록만 보여주는 것을 넘어, 최근 본 숙소 저장 기능과 직관적인 예약 피드백을 통해 실제 상용 앱과 유사한 흐름을 구현하고자 했습니다.
+
+
+## 2. 개발 및 실행 환경
+
+* **IDE:** Android Studio
+* **Language:** Kotlin
+* **Min SDK:** 26
+* **Target SDK:** 36
+
+## 3. 주요 액티비티(Activity) 및 XML 구성
+
+본 앱은 기능별로 클래스와 레이아웃이 철저히 분리되어 있으며, 기말고사 필수 및 가산점 요건을 모두 충족하도록 설계되었습니다.
+
+### [인트로 및 메인 허브]
+* **`SplashActivity`:** 앱 최초 실행 시 나타나는 시작 화면. `Handler`를 이용해 2.5초 대기 후 메인 화면으로 자동 전환됩니다.
+* **`MainActivity`:** 네비게이션 드로어(`nav_header.xml`, `menu_nav.xml`)와 툴바 옵션 메뉴를 지원하는 메인 허브 화면.
+
+
+### [숙소 목록 및 예약 기능]
+* **`ListActivity`:** 판매 중인 숙소 목록 제공. `RecyclerView`와 `RoomAdapter`, `RoomRepository` 더미 데이터를 이용해 목록을 구현했습니다.
+* **`DetailActivity`:** 선택한 숙소의 상세 정보(이미지, 가격, 설명) 확인 및 예약 처리. `Intent`를 통해 데이터를 안전하게 전달받습니다.
+* **예약 다이얼로그 & 스낵바:** 숙소 예약 버튼 클릭 시 `AlertDialog`로 확인창이 뜨며, 승인 시 하단에 `SnackBar`로 예약 완료 피드백을 제공.
+
+### [마이페이지 및 예약 내역]
+* **`MyPageActivity`:** `SharedPreferences`를 활용해 기기에 저장된 '최근 본 숙소' 내역을 텍스트로 불러와 띄워줍니다.
+* **`ReservationListActivity`:** 예약이 완료된 숙소 내역을 `ReservationRepository`에서 불러와 리스트 형태로 재확인할 수 있습니다.
+
+---
+
+
+## 4. 앱 실행 및 조작 방법
+
+1. 압축을 푼 폴더를 Android Studio에서 `[File] -> [Open]`으로 엽니다.
+2. 하단 상태 표시줄에서 Gradle Sync가 완료될 때까지 대기합니다.
+3. 매니페스트 파일에 `SplashActivity`가 첫 시작 부분으로 설정되어 있습니다.
+4. 2.5초 후 메인 화면에 진입하면 화면 중앙의 버튼을 누르거나, **왼쪽 상단의 햄버거 메뉴 아이콘(또는 화면 스와이프)**을 통해 네비게이션 드로어를 열 수 있습니다.
+5. 드로어 메뉴나 버튼을 통해 숙소 목록 화면으로 이동한 뒤, 카드를 클릭하여 상세 페이지를 확인하고 예약 기능을 테스트할 수 있습니다.
 
 ## 구현 기능
 - 스플래시 화면 (Handler 2.5초 후 자동 전환)
@@ -13,15 +55,3 @@
 - SharedPreferences (마지막 본 숙소 저장)
 - AlertDialog + Snackbar (예약하기)
 
-## 개발 환경
-- Android Studio
-- Kotlin 100%
-- minSdk 26 / targetSdk 36
-
-## AI 사용 내역
-- Claude (Anthropic)를 활용하여 코드 작성 보조
-- 사용 파일: MainActivity.kt, ListActivity.kt, DetailActivity.kt, SplashActivity.kt, RoomAdapter.kt, RoomRepository.kt, 각종 XML 레이아웃
-=======
-# mobile-software-RoomMarket-
-여기어때, 야놀자 같은 숙소 예약 모바일 어플
->>>>>>> 121a6d63bb1a200ddde6e21a0b7a663707643557
