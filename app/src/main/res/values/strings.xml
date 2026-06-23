@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">RoomMarket</string>
+    <string name="splash_tagline">머무는 모든 순간을, 더 특별하게</string>
+
+    <string name="drawer_open">메뉴 열기</string>
+    <string name="drawer_close">메뉴 닫기</string>
+
+    <string name="nav_room_list">숙소 목록</string>
+    <string name="nav_reservation_list">예약 내역</string>
+    <string name="nav_mypage">마이페이지</string>
+
+    <string name="menu_share">공유하기</string>
+    <string name="menu_home">홈으로 가기</string>
+
+    <string name="share_text">RoomMarket에서 마음에 드는 숙소를 찾아보세요!</string>
+    <string name="share_chooser_title">공유</string>
+
+    <string name="main_welcome">환영합니다</string>
+    <string name="main_subtitle">오늘은 어디에 머무르고 싶으신가요?</string>
+    <string name="btn_go_list">숙소 둘러보기</string>
+
+    <string name="nav_header_title">RoomMarket</string>
+    <string name="nav_header_subtitle">편안한 하룻밤을 위한 공간</string>
+
+    <string name="list_title">숙소 목록</string>
+    <string name="price_per_night">%1$s원 / 1박</string>
+
+    <string name="detail_title">숙소 상세</string>
+    <string name="btn_reserve">객실 예약하기</string>
+
+    <string name="reserve_dialog_title">예약 확인</string>
+    <string name="reserve_dialog_message">이 숙소를 예약하시겠습니까?</string>
+    <string name="reserve_confirm">예약</string>
+    <string name="reserve_cancel">취소</string>
+    <string name="reserve_done">예약이 완료되었습니다.</string>
+
+    <string name="reservation_title">예약 내역</string>
+    <string name="reservation_empty">예약 내역이 없습니다.</string>
+
+    <string name="mypage_title">마이페이지</string>
+    <string name="mypage_greeting">안녕하세요</string>
+    <string name="mypage_last_viewed_label">최근 본 숙소</string>
+    <string name="mypage_last_viewed_none">최근 본 숙소가 없습니다.</string>
+    <string name="mypage_view_reservations">예약 내역 보기</string>
+
+    <string name="prefs_name">stay_market_prefs</string>
+    <string name="prefs_key_last_viewed">last_viewed</string>
+
+    <string name="room_01_name">바다뷰 디럭스</string>
+    <string name="room_04_name">한옥 스테이</string>
+    <string name="room_02_name">시티 스카이 스위트</string>
+    <string name="room_03_name">숲속 통나무 코티지</string>
+    <string name="room_05_name">감성 루프탑 하우스</string>
+    <string name="room_06_name">레이크사이드 풀빌라</string>
+
+    <string name="room_01_desc">탁 트인 오션뷰와 프라이빗 발코니. 파도 소리와 함께하는 하룻밤.</string>
+    <string name="room_04_desc">고즈넉한 한옥에서 즐기는 전통과 현대의 조화. 마당 정원이 매력적.</string>
+    <string name="room_02_desc">도심 한복판, 35층에서 내려다보는 야경. 비즈니스/관광 모두 편리.</string>
+    <string name="room_03_desc">우거진 숲 속 통나무집. 벽난로와 마당 BBQ로 캠핑 무드.</string>
+    <string name="room_05_desc">감성 가득한 루프탑과 와인 셀러. 커플 여행에 추천.</string>
+    <string name="room_06_desc">호수가 보이는 야외 풀과 자쿠지. 프라이빗 풀빌라 경험.</string>
+</resources>
