@@ -12,6 +12,7 @@
 
     <string name="menu_share">공유하기</string>
     <string name="menu_home">홈으로 가기</string>
+    <string name="menu_search">검색</string>
 
     <string name="share_text">RoomMarket에서 마음에 드는 숙소를 찾아보세요!</string>
     <string name="share_chooser_title">공유</string>
@@ -60,4 +61,6 @@
     <string name="room_03_desc">우거진 숲 속 통나무집. 벽난로와 마당 BBQ로 캠핑 무드.</string>
     <string name="room_05_desc">감성 가득한 루프탑과 와인 셀러. 커플 여행에 추천.</string>
     <string name="room_06_desc">호수가 보이는 야외 풀과 자쿠지. 프라이빗 풀빌라 경험.</string>
+
+    <string name="label_location">위치</string>
 </resources>

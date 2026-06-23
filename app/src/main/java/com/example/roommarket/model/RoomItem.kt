@@ -10,5 +10,6 @@ data class RoomItem(
     val name: String,
     val price: Int,
     val description: String,
+    val location: String,
     @DrawableRes val imageResId: Int
 ) : Parcelable

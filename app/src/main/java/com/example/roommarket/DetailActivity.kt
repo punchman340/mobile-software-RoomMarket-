@@ -60,6 +60,7 @@ class DetailActivity : AppCompatActivity() {
         binding.tvName.text = item.name
         val formatted = NumberFormat.getNumberInstance(Locale.KOREA).format(item.price)
         binding.tvPrice.text = getString(R.string.price_per_night, formatted)
+        binding.tvLocation.text = getString(R.string.label_location) + ": " + item.location
         binding.tvDescription.text = item.description
     }
 
@@ -86,10 +87,6 @@ class DetailActivity : AppCompatActivity() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean = when (item.itemId) {
-        android.R.id.home -> {
-            onBackPressedDispatcher.onBackPressed()
-            true
-        }
         R.id.action_home -> {
             val intent = Intent(this, MainActivity::class.java)
                 .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP)
@@ -105,6 +102,9 @@ class DetailActivity : AppCompatActivity() {
             true
         }
         else -> super.onOptionsItemSelected(item)
+    }
+    override fun onSupportNavigateUp(): Boolean {
+        return super.onSupportNavigateUp()
     }
 
     companion object {

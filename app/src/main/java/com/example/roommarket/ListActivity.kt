@@ -2,6 +2,7 @@ package com.example.roommarket
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
@@ -9,6 +10,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.roommarket.adapter.RoomAdapter
 import com.example.roommarket.databinding.ActivityListBinding
 import com.example.roommarket.model.RoomRepository
+import androidx.appcompat.widget.SearchView
 
 class ListActivity : AppCompatActivity() {
 
@@ -35,6 +37,18 @@ class ListActivity : AppCompatActivity() {
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         menuInflater.inflate(R.menu.menu_home, menu)
+        val menuItem = menu.findItem(R.id.action_search)
+        val searchView = menuItem?.actionView as? SearchView
+        searchView?.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
+            override fun onQueryTextChange(newText: String?): Boolean {
+                Log.d("RoomMarket", "onQueryTextChange $newText")
+                return true
+            }
+            override fun onQueryTextSubmit(query: String?): Boolean {
+                Log.d("RoomMarket", "onQueryTextSubmit $query")
+                return true
+            }
+        })
         return true
     }
 

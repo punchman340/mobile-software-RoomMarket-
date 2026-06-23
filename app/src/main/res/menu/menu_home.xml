@@ -9,4 +9,9 @@
         android:id="@+id/action_share"
         android:title="@string/menu_share"
         app:showAsAction="never" />
+    <item
+        android:id="@+id/action_search"
+        android:title="@string/menu_search"
+        app:showAsAction="ifRoom"
+        app:actionViewClass="androidx.appcompat.widget.SearchView" />
 </menu>
