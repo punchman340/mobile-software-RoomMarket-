@@ -3,8 +3,9 @@ package com.example.roommarket.model
 import android.content.Context
 import com.example.roommarket.R
 
+// 숙소 데이터 저장소
 object RoomRepository {
-
+    // 로드될 데이터 목록들
     fun load(context: Context): List<RoomItem> = listOf(
         RoomItem(
             id = "room_01",
